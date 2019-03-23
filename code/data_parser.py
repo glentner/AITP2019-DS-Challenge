@@ -7,8 +7,6 @@ with open('./data/gsod.obs.csv') as csvfile:
         readCSV = csv.reader(csvfile, delimiter = ",")
         i = 0
         for row in readCSV:
-          print(i)
-          i = i + 1
           iddata = ids.readlines()  
           words = iddata[0].split("|")
           for word in words:
