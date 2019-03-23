@@ -1,0 +1,4 @@
+grep gsod.stn.csv | grep 'US,IN' | cut -d',' -f1 |sort | uniq |grep -v '999999' | tr '\n' '|' > us-in.station-ids
+ 
+grep gsod.stn.csv | grep 'US,IN' | grep '999999' | cut -d',' -f2 | sort | uniq | grep -v '99999' | tr '\n' '|' > us-in.station-wban
+ 
